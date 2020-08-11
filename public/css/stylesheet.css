@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    max-width: 100%;
+    
     background-image: linear-gradient(to right, #99ccff, #00ffcc);
 }
 h5{
@@ -8,7 +8,8 @@ h5{
     font-size: 35px;
 }
 
-i {
+i{
+    margin-left: 15px;
     font-size: 27px;
 }
 #welcome {
@@ -29,15 +30,19 @@ i {
 
 #submit-btn{
     width: 450px;
+    margin-left: 520px;
 }
 
-.card-header {
-    padding-top: 10px;
-    width: 100%;
+#bin-head, #dev-head 
+#bin-container, 
+#devour-container {
+    width: 600px;
+    padding-top: 0px;
 }
 
-#fix-right {
-    margin-left: 50px;
+#bin-container, 
+#devour-container {
+padding-bottom: 50px;
 }
 
 #load {
@@ -45,23 +50,13 @@ i {
 }
 
 #pic {
+    margin-top: 50px;
     height: 250px;
     width: 500px;
-    display: block;
     margin-left: auto;
     margin-right: auto;
     padding-right:40px;
     padding-left:70px;
-}
-
-#devour-container,
-#main,
-#bin-container {
-    position: sticky;
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-  
 }
 
 #break {
@@ -81,8 +76,11 @@ i {
     background-color: darkcyan;
 }
 
-#main {
+#main, #bin-container, 
+#devour-container, #textbox, 
+#bin-head, #dev-head {
     border-radius: 5px;
     border-color: black;
     padding: 0px;
+    border-width: 1px;
 }

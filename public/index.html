@@ -17,37 +17,29 @@
     <div class="jumbotron jumbotron-fluid" id="welcome">
         <div class="container">
             <h1 class="display-4">Welcome to Devour da Burger!</h1>
-            <p class="lead">Use the text box below to enter your favorite burger, or just make any ol' burger name. Once
-                you're finished, press the "Submit" button to store your burger. Once you have all your burgers stored,
-                click on the "Devour Me!" button to eat the burgers you've eaten. All burgers that have been eaten will
+            <p class="lead">Use the text box below to enter your favorite burger, or just make up any ol' burger name. Once
+                you're finished, press the "Submit" button to store your burger in the "Waiting" bin. Once you have all your burgers stored,
+                click on the "Devour Me!" button to eat the burgers you've created. All burgers that have been eaten will
                 go into the "Devoured" bin.</p>
         </div>
     </div>
     <!-- main cointainer to hold burger content-->
     <div class="container-fluid" id="main-contain">
+        <!-- to create space between jumbotron and content -->
         <div class="row" id="break"></div>
-        <!-- container to hold burger cols -->
+
+        <!-- container to hold dynamically created data from MySQL -->
         <div class="row justify-content-center">
             <!-- Right Side -->
-            <div class="col-sm-4">
+            <div class="col-sm-5">
                 <div class="card" id="devour-container">
                     <h5 id="dev-head" class="card-header"><b>Burgers Waiting to be Devoured</b></h5>
                     <div class="card-body" id="devour-body"></div>
                 </div>
             </div>
-            <!-- Middle -->
-            <div class="col-sm-3" id="main">
-                <img src="./images/buger2.jpeg" class="img-fluid" alt="cheeseburger-clipart" id="pic">
-                <div class="container-fluid" id="inner-main">
-                    <input class="form-control" type="text" placeholder="Enter a burger to be eaten!" id="textbox">
-                    <button type="button" class="btn btn-primary btn-block" id="submit-btn">Submit <div id="load"
-                            class="spinner-border text-light" role="status">
-                            <span class="sr-only">Loading...</span>
-                        </div></button>
-                </div>
-            </div>
+            <div class="col-sm-2"></div>
             <!-- Left Side -->
-            <div class="col-sm-4" id="fix-right">
+            <div class="col-sm-5" id="fix-right">
                 <div class="card" id="bin-container">
                     <h5 id="bin-head" class="card-header"><b>Devoured Bin</b><br>
                         <i>May the burgers that lie here find peace that they filled many a tummy</i> </h5>
@@ -55,8 +47,20 @@
                 </div>
             </div>
         </div>
-
+        <!-- Middle -->
+        <div class="row justify-content-center">
+        <div class="col-sm-12" id="main">
+            <img src="./images/buger2.jpeg" class="img-fluid" alt="cheeseburger-clipart" id="pic">
+            <div class="container-fluid" id="inner-main">
+                <input class="form-control" type="text" placeholder="Enter a burger to be eaten!" id="textbox">
+                <button type="button" class="btn btn-primary btn-block" id="submit-btn">Submit <div id="load"
+                        class="spinner-border text-light" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div></button>
+            </div>
+        </div>
     </div>
+</div>
 
 
 
