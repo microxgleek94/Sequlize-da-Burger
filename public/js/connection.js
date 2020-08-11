@@ -1,4 +1,3 @@
-
 //Set up the MYSQL connection
 const mysql = require("mysql");
 
@@ -17,14 +16,7 @@ if(process.env.JAWSDB_URL) {
 };
 
 //Make the connection
-connection.connect( (err) => {
-    console.log(`Entering the connect function in connection.js`);
-    if(err){
-        console.error(`There was an error connecting: ${err.stack}`);
-        return;
-    }
-    console.log(`Connected as id: ${connection.threadId}`);
-});
+connection.connect()
 
-//Export connection to the orm file
+//Export connection
 module.exports = connection;

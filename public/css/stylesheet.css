@@ -1,0 +1,61 @@
+body {
+    text-align: center;
+    max-width: 100%;
+    background-image: linear-gradient(to right, #99ccff, #00ffcc);
+}
+
+#welcome {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 5px;
+}
+
+#text {
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.card-header {
+    padding-top: 10px;
+    width: 100%;
+}
+
+#load {
+    display: none;
+}
+
+#pic {
+    height: 150px;
+    width: 150px;
+}
+
+#devour-container,
+#main,
+#bin-container {
+    position: sticky;
+}
+
+#break{
+    padding: 20px;
+}
+
+#dev-head {
+    background-color: brown;
+}
+
+#inner-main {
+    padding: 15px;
+    height: 200px;
+}
+
+#bin-head {
+    background-color: darkcyan;
+}
+
+#main {
+    border-radius: 5px;
+    border-color: black;
+    padding: 0px;
+}
