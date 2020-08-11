@@ -1,0 +1,13 @@
+{
+  "development": {
+    "username" : "process.env.MY_SQL_USERNAME",
+    "password": "process.env.MY_SQL_PASSWORD",
+    "database": "burgers_db",
+    "host": "process.env.MY_SQL_HOST",
+    "dialect": "mysql"
+  },
+  "production": {
+    "use_env_variable": "JAWSDB_URL",
+    "dialect": "mysql"
+  }
+}
