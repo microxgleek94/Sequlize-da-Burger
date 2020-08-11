@@ -2,3 +2,5 @@
 DROP DATABASE IF EXISTS burgers_db;
 -- Creates the "burgers_db" database --
 CREATE DATABASE burgers_db;
+-- Use db if created already --
+USE burgers_db;

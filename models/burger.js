@@ -13,6 +13,8 @@ module.exports = function (sequelize, DataTypes) {
     devoured: {
       type: DataTypes.BOOLEAN,
       allowNull: false,
+      // to ensure our burgers are not eaten prior to the user clicking the "devore me" btn
+      defaultValue: false,
       validate: {
         // to make sure the user has at least 1 character when entering a burger
         len: [1]

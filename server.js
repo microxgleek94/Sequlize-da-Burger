@@ -5,6 +5,9 @@
 // *** Dependencies
 // =============================================================
 var express = require("express");
+//ENABLE if you want to use your own local environmental variables.
+require("dotenv").config();
+
 
 // Sets up the Express App
 // =============================================================
