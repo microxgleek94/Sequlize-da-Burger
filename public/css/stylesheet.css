@@ -1,16 +1,15 @@
 body {
     text-align: center;
-    
     background-image: linear-gradient(to right, #99ccff, #00ffcc);
 }
 h5{
     font-family: 'Chilanka', cursive;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 i{
     margin-left: 15px;
-    font-size: 27px;
+    font-size: 20px;
 }
 #welcome {
     padding-bottom: 20px;
@@ -30,19 +29,15 @@ i{
 
 #submit-btn{
     width: 450px;
-    margin-left: 520px;
+    margin: auto;
 }
 
-#bin-head, #dev-head 
 #bin-container, 
 #devour-container {
-    width: 600px;
+    width: 100%;
     padding-top: 0px;
-}
-
-#bin-container, 
-#devour-container {
-padding-bottom: 50px;
+    display: block;
+    padding-bottom: 50px;
 }
 
 #load {
@@ -81,6 +76,5 @@ padding-bottom: 50px;
 #bin-head, #dev-head {
     border-radius: 5px;
     border-color: black;
-    padding: 0px;
     border-width: 1px;
 }
