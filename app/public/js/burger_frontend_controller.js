@@ -1,9 +1,5 @@
 $.get("/api/all", function (data) {
-  console.log(`defalut table values: ${JSON.stringify(data)}`);
-  
-  // var response = data;
-  //  = response.burger_name;
-  // var defaultBurgID = response.id; 
+  console.log(`defalut table values: ${JSON.stringify(data)}`); 
 
   for (var i = 0; i < data.length; i++) {
     // Create a parent div to hold default burger data &Add an id to the div to mark which div it is
