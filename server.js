@@ -5,6 +5,7 @@
 // *** Dependencies
 // =============================================================
 var express = require("express");
+const path = require("path");
 
 
 // Sets up the Express App
@@ -13,7 +14,8 @@ var app = express();
 var PORT = process.env.PORT || 8080;
 
 // Static directory
-app.use(express.static("app/public"));
+// to access static files such as css and JS
+app.use(express.static(path.join(__dirname, "public")));
 
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
