@@ -23,8 +23,8 @@ app.use(express.json());
 // Routes
 // =============================================================
 // Import routes and give the server access to them.
-require("../app/routes/html-routes")(app);
-require("../app/routes/api-routes")(app);
+require("../Sequlize-da-Burger/app/routes/html-routes.js")(app);
+require("../Sequlize-da-Burger/app/routes/api-routes")(app);
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
