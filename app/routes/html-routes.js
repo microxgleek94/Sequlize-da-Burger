@@ -14,7 +14,7 @@ module.exports = function(app) {
 
   // index route loads view.html
   app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "Sequlize-da-Burger/app/public/index.html"));
+    res.sendFile(path.join(__dirname, "./app/public/index.html"));
   });
 
 };
