@@ -5,34 +5,29 @@
 // *** Dependencies
 // =============================================================
 var express = require("express");
-//ENABLE if you want to use your own local environmental variables.
-require("dotenv").config();
 
 
 // Sets up the Express App
 // =============================================================
 var app = express();
-var PORT = process.env.PORT || 8085;
+var PORT = process.env.PORT || 8080;
 
-// Requiring our models for syncing
-var db = require("./models");
+// Static directory
+app.use(express.static("app/public"));
 
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// Static directory
-app.use(express.static("public"));
 
 // Routes
 // =============================================================
-require("./routes/html-routes.js")(app);
-require("./routes/api-routes.js")(app);
+// Import routes and give the server access to them.
+require("../Sequlize-da-Burger/app/routes/html-routes")(app);
+require("../Sequlize-da-Burger/app/routes/api-routes")(app);
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
-db.sequelize.sync({ force: true }).then(function() {
-    app.listen(PORT, () => {
-        console.log(`Server listening on: http://localhost:${PORT}`);
-    });
+app.listen(PORT, function () {
+    console.log(`Server listening on: http://localhost:${PORT}`);
 });

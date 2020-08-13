@@ -5,6 +5,12 @@ body {
 h5{
     font-family: 'Chilanka', cursive;
     font-size: 25px;
+    
+}
+
+#defaultText {
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
 
 i{
